@@ -157,3 +157,16 @@ function main() {
 }
 
 window.addEventListener("load", main, false);
+
+document.getElementById("downloadResume").addEventListener("click", function() {
+    // Replace 'path-to-your-file.pdf' with the actual file path
+    var fileUrl = 'Christoffer_Ivano_Resume.pdf';
+
+    var a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = 'Christoffer_Ivano_Resume.pdf';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
