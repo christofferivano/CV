@@ -170,3 +170,18 @@ document.getElementById("downloadResume").addEventListener("click", function() {
     a.click();
     document.body.removeChild(a);
   });
+
+  const toggleButton = document.getElementById("toggleButton");
+  const contentToToggle = document.getElementById("contentToToggle");
+  let isVisible = true; // Track the visibility state
+
+  toggleButton.addEventListener("click", () => {
+    isVisible = !isVisible;
+    if (isVisible) {
+      contentToToggle.classList.remove("translate-y-full", "opacity-0");
+      contentToToggle.classList.add("translate-y-0", "opacity-100");
+    } else {
+      contentToToggle.classList.remove("translate-y-0", "opacity-100");
+      contentToToggle.classList.add("translate-y-full", "opacity-0");
+    }
+  });

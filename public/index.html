@@ -43,6 +43,10 @@
         .footer img:hover {
         opacity: 0.5;
         }
+        #hideButton:focus + div {
+            transform: translateX(100%);
+            opacity: 0;
+        }
     </style>
 </head>
 <body class="">
@@ -69,7 +73,7 @@
             </a>
         </div>
         <div class="pt-10">
-            <h1 class="text-4xl font-semibold text-fontCyan text-white">
+            <h1 class="text-4xl font-semibold text-white">
                 Tech Stack
             </h1>
             <div class="pt-2 flex">
@@ -79,7 +83,7 @@
             </div>
         </div>
         <div class="py-20">
-            <h1 class="text-white text-4xl font-bold">
+            <h1 class="text-fontCyan text-4xl font-bold ">
                 Featured Projects
             </h1>
             <div class="pt-5 flex">
@@ -139,8 +143,43 @@
                 </div>
             </div>
         </div>
+        <div class="text-white">
+            <h1 class="pb-6 text-4xl font-bold text-fontCyan">
+                Final Project Thesis
+            </h1>
+            <img src="/public/images/fp.png" alt="" class="w-screen" style="height: 85%;">
+            <h2 class="py-4 text-2xl font-semibold flex">
+                <div class="w-1 bg-fontCyan mr-2"></div>Plagiarism Detection System
+            </h2>
+            <p class="text-md py-5">
+                The Plagiarism Detection System for Student On Job Training Reports. 
+                Users can view plagiarism detection results in the form of a percentage, duplicated sentences, and document names.
+                The system using Rabin Karp algorithm to do the percentage count for the similarity score.
+            </p>
+            <h2 class="py-4 text-2xl font-semibold flex">
+                <div class="w-1 bg-fontCyan mr-2"></div>Tech Stack and Library Used
+            </h2>
+            <p class="text-md py-3">
+                The plagiarism detection project uses a tech stack, including:
+                <ul class="list-disc pl-8">
+                    <li>Python: it is used to design the backend and algorithms.</li>
+                    <li>Rabin Karp: do the percentage count for the similarity score.</li>
+                    <li>React: used to design the user interface.</li>
+                    <li>Natural Language Processing: used to clean up student on job training dataset.</li>
+                </ul>
+            </p>
+            <h2 class="py-4 text-2xl font-semibold flex pt-8">
+                <div class="w-1 bg-fontCyan mr-2"></div>Project Goal
+            </h2>
+            <p class="text-md py-5">
+                My goal is to building a plagiarism detection system using the Rabin-Karp algorithm. I hope the plagiarism
+                detection system with evaluation output for student on job training documents could assist the 
+                secretary of the academic department in detecting plagiarism in the internship reports submitted by students.
+
+            </p>
+        </div>
         <div class="pt-20 pb-36">
-            <h1 class="text-4xl text-white font-bold">
+            <h1 class="text-4xl text-fontCyan font-bold">
                 Committee Experience
             </h1>
             <div class="flex flex-row items-center pt-10">
